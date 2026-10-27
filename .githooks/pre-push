@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Run the local CI before anything leaves this machine.
+exec bash "$(git rev-parse --show-toplevel)/ci/run.sh"

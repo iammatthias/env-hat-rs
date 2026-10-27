@@ -1,0 +1,17 @@
+[package]
+name = "env-hat"
+version = "0.1.0"
+edition.workspace = true
+repository.workspace = true
+description = "Drivers for the Waveshare Environment Sensor HAT (BME280, TSL2591, LTR390, SGP40, ICM20948) over Linux i2c-dev"
+publish.workspace = true
+# gas_index.rs ports Sensirion's BSD 3-Clause gas-index-algorithm.
+license = "MIT AND BSD-3-Clause"
+readme = "../../README.md"
+rust-version = "1.85"
+
+[lib]
+name = "env_hat"
+
+[dependencies]
+libc.workspace = true
